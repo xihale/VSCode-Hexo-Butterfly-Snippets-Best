@@ -1,0 +1,92 @@
+{
+  "blockquote":{
+    "prefix":[">blockquote"],
+    "body":[
+      "{% blockquote ${1:author} ${2:link} ${3:source_link_title} %}",
+      "$4",
+      "{% endblockquote %}"
+    ],
+    "description":"{% blockquote [author[, source]] [link] [source_link_title] %}\ncontent\n{% endblockquote %}"
+  },
+  "codeblock":{
+    "prefix":[">codeblock"],
+    "body":[
+      "{% codeblock ${1:title} ${2:lang:${3:cpp}} ${4:url} ${5:link text} ${6:mark:$7} %}",
+      "$6",
+      "{% endcodeblock %}"
+    ],
+    "description": "{% codeblock [title] [lang:language] [url] [link text] [additional options] %}\ncode snippet\n{% endcodeblock %}"
+  },
+  "pullquote":{
+    "prefix":[">pullquote"],
+    "body":[
+      "{% pullquote %}",
+      "$1",
+      "{% endpullquote %}"
+    ],
+    "description": "Insert pullquote."
+  },
+  "gist":{
+    "prefix":[">gist"],
+    "body":[
+      "{% gist ${1:gist_id} %}"
+    ],
+    "description": "Insert gist."
+  },
+  "iframe":{
+    "prefix":[">iframe"],
+    "body":[
+      "{% iframe ${1:url} $2 %}"
+    ],
+    "description": "Insert iframe."
+  },
+  "link":{
+    "prefix":[">link"],
+    "body":[
+      "{% link ${1:text} ${2:url} %}"
+    ],
+    "description": "Insert link."
+  },
+  "include_code":{
+    "prefix":[">include_code"],
+    "body":[
+      "{% include_code lang:${1:language} ${2:from:${3:line}} ${4:to:${5:line}} ${6:path} %}"
+    ],
+    "description": "{% include_code [title] [lang:language] [from:line] [to:line] path/to/file %}"
+  },
+  "youtube":{
+    "prefix":[">youtube"],
+    "body":[
+      "{% youtube ${1:video_id} %}"
+    ],
+    "description": "{% youtube video_id [type] [cookie] %}"
+  },
+  "vimeo":{
+    "prefix":[">vimeo"],
+    "body":[
+      "{% vimeo ${1:video_id} %}"
+    ],
+    "description": "Insert vimeo."
+  },
+  "post_path":{
+    "prefix":[">post_path"],
+    "body":[
+      "{% post_path ${1:filename} %}"
+    ],
+    "description": "Insert post_path."
+  },
+  "post_link":{
+    "prefix":[">post_link"],
+    "body":[
+      "{% post_link ${1:filename} $2 %}"
+    ],
+    "description": "{% post_link filename [title] [escape] %}"
+  },
+  "more":{
+    "prefix":[">more"],
+    "body":[
+      "<!-- more -->"
+    ],
+    "description": "summary."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "note":{
+    "prefix": [">note"],
+    "body": ["{% note $1 %}", "$2", "{% endnote %}"]
+  },
+  "default": {
+    "prefix": [">default"],
+    "body": ["{% note default modern %}", "$1", "{% endnote %}"],
+    "description": "Insert Default."
+  },
+  "primary": {
+    "prefix": [">primary"],
+    "body": ["{% note primary modern %}", "$1", "{% endnote %}"],
+    "description": "Insert Primary."
+  },
+  "success": {
+    "prefix": [">success"],
+    "body": ["{% note success modern %}", "$1", "{% endnote %}"],
+    "description": "Insert Success."
+  },
+  "info": {
+    "prefix": [">info"],
+    "body": ["{% note info modern %}", "$1", "{% endnote %}"],
+    "description": "Insert Info."
+  },
+  "warning": {
+    "prefix": [">warning"],
+    "body": ["{% note warning modern %}", "$1", "{% endnote %}"],
+    "description": "Insert Warning."
+  },
+  "danger": {
+    "prefix": [">danger"],
+    "body": ["{% note danger modern %}", "$1", "{% endnote %}"],
+    "description": "Insert Danger."
+  },
+  "tabs": {
+    "prefix": [">tabs"],
+    "body": ["{% tabs $1 %}", "$2", "{% endtabs %}"],
+    "description": "Insert Tabs."
+  },
+  "emsp;": {
+    "prefix": [">emsp"],
+    "body": ["&emsp;$1"],
+    "description": "Insert &emsp;."
+  },
+  "refer;": {
+    "prefix": [">refer"],
+    "body": ["[$1]($2)"],
+    "description": "Insert Refer."
+  },
+  "raw;": {
+    "prefix": [">raw"],
+    "body": ["{% raw %}", "$1", "{% endraw %}"],
+    "description": "Insert Raw."
+  },
+  "gallery": {
+    "prefix": [">gallery"],
+    "body": ["{% gallery %}", "$1", "{% endgallery %}"],
+    "description": "Insert Gallery."
+  },
+  "subtabs": {
+    "prefix": [">subtabs"],
+    "body": ["{% subtabs $1 %}", "$2", "{% endsubtabs %}"],
+    "description": "Insert Subtabs."
+  },
+  "tab":{
+    "prefix": [">tab"],
+    "body": ["<!-- tab $1 -->","$2","<!-- endtab -->"],
+    "description": "Insert Tab."
+  },
+  "btn":{
+    "prefix": [">btn"],
+    "body": ["{% btn '${1:url}',${2:Text} %}"],
+    "description": "{% btn 'url',Text,[class] %}"
+  },
+  "mermaid":{
+    "prefix": [">mermaid"],
+    "body": ["{% mermaid %}", "$1", "{% endmermaid %}"],
+    "description": "{ \"title\": \"Key elements in Product X\",\n  \"data\": [\n    {\n      \"element\": \"Calcium\",\n      \"value\": 42.96\n    },\n    {\n      \"element\": \"Potassium\",\n      \"value\": 50.05\n    },\n    {\n      \"element\": \"Magnesium\",\n      \"value\": 10.01\n    },\n    {\n      \"element\": \"Iron\",\n      \"value\": 5\n    }\n  ]\n}"
+  },
+  "hide-toggle":{
+    "prefix": [">hide-toggle"],
+    "body": ["{% hideToggle %}", "$1", "{% endhideToggle %}"],
+    "description": "Insert HideToggle."
+  },
+  "hide-inline":{
+    "prefix": [">hide-inline"],
+    "body": ["{% hideInline ${1:Content} ${2:ShowText} ${3:ShowColor} ${4:ContentColor} %}"],
+    "description": "Insert HideInline."
+  }
+}
