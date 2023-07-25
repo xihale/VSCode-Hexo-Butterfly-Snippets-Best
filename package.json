@@ -41,8 +41,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/KakaWanYifan/VSCode-Hexo-Butterfly-Snippets"
+        "url": "https://github.com/xihale/VSCode-Hexo-Butterfly-Snippets-Best"
     },
-    "homepage": "https://github.com/KakaWanYifan/VSCode-Hexo-Butterfly-Snippets",
+    "homepage": "https://github.com/xihale/VSCode-Hexo-Butterfly-Snippets-Best",
     "icon": "lib/hexo.png"
 }
